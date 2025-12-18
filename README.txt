@@ -7,7 +7,7 @@ here you are!
 *=it might not actually be the smallest possible, but it would be close**
 **=im not sure how close it is, its the best I could do at least
 
----------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
 Be wary of using `qemu-user` to emulate these. QEMU (and likely any other form
 of user-mode emulation) uses its own loaders which, while matching

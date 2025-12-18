@@ -23,12 +23,12 @@ E_PHOFF(	.quad	p_type - e_hdr			)
 E_SHOFF(	mov	x8,		#64		;
 		svc	#0				)
 E_FLAGS(	b	p_paddr				)
-E_EHSIZE(	.space	2,		0		)
+E_EHSIZE(	.ascii	"or"				)
 E_PHENTSIZE(						)
 E_PHNUM(						)
-E_SHENTSIZE(	.space	2,		0		)
+E_SHENTSIZE(	.ascii	"vi"				)
 P_TYPE(							)	// e_shnum
-P_FLAGS(	.space	3,		0		)	// e_shstrndx
+P_FLAGS(	.ascii	"t:)"				)	// e_shstrndx
 P_OFFSET(	.space	8,		0		)
 P_VADDR(	.quad	ENTRY - 4			)
 P_PADDR(	mov	x8,		#93		;
